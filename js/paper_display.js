@@ -25,7 +25,7 @@ window.onload = function() {
                 }
                 
                 for(var j=0 ; j<author.length ; j++){
-                    if(author[j] == "Kaining Ying" || author[j] == "Kaining Ying*"){
+                    if(author[j] == "Avijit Dasgupta" || author[j] == "Avijit Dasgupta*"){
                         author[j] = "<b>" + author[j] + "</b>";
                     }
                     
