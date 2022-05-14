@@ -6,7 +6,7 @@
         "description": "We show the efficacy of using contextual information such as scene labels, human keypoints etc., for group activity recognition",
         "year": "2020",
         "publisher": "ICPR",
-        "image": "./files/papers/images/icpr-1.jpg",
+        "image": "files/papers/images/icpr-1.jpg",
         "pdf": "./files/papers/pdf/icpr.pdf",
         "equal": false,
         "meta" :{
