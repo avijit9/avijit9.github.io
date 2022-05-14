@@ -10,6 +10,7 @@
         "pdf": "./files/papers/pdf/icpr.pdf",
         "equal": false,
         "meta" :{
+            "BibTex": "./files/papers/bib/dasgupta2020.bib"
         }
     }
     
