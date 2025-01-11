@@ -26,10 +26,10 @@ export const aboutMe: AboutMe = {
     `
     I am a Ph.D. student in Computer Science at <a href="https://www.iiit.ac.in">IIIT Hyderabad, India</a> and a member of the <a href="https://cvit.iiit.ac.in">CVIT lab</a>, jointly advised by 
     <a href="https://faculty.iiit.ac.in/~jawahar/">C. V. Jawahar</a>, IIIT Hyderabad, and 
-    <a href="https://thoth.inria.fr/members/karteek-alahari/">Karteek Alahari</a> at the <a href="https://thoth.inria.fr">THOTH group</a>, Inria. 
+    <a href="https://thoth.inria.fr/members/karteek-alahari/">Karteek Alahari</a> at the <a href="https://thoth.inria.fr">Thoth group</a>, Inria. 
     My research focuses on developing video understanding models with the ability to generalize effectively across previously unseen domains. 
     <br><br>
-    In 2019, I've spent three wonderful months as a visiting researcher at the THOTH group, Inria. 
+    In 2019, I've spent three wonderful months as a visiting researcher at the Thoth group, Inria. 
     My Ph.D. is funded by the Google India Ph.D. Fellowship, 2017 (1 out of 4 recipients). Thank you Google!
   `,
   email: "avijit.dasgupta@research.iiit.ac.in",
