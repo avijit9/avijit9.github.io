@@ -6,4 +6,5 @@ _site
 # general
 .DS_Store
 Thumbs.db
-ehthumbs.db
+ehthumbs.dbnode_modules/
+node_modules/
