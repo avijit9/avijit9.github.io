@@ -18,7 +18,7 @@ export const experienceData: Experience[] = [
     companyUrl: "https://cognizer.ai/",
   },
   {
-    date: "Feb 2019 -  April 2019",
+    date: "Feb 2019 -  Apr 2019",
     title: "Visiting Research Fellow",
     company: "Thoth, Inria",
     description:
@@ -36,7 +36,7 @@ export const experienceData: Experience[] = [
     companyUrl: "https://cvit.iiit.ac.in/",
   },
   {
-    date: "July 2014 - Octorber 2016",
+    date: "July 2014 - Oct 2016",
     title: "Junior Research Fellow",
     company: "IIT Kharagpur",
     description:
