@@ -17,7 +17,7 @@ export const educationData: Education[] = [
   },
   {
     year: "2009—2013",
-    institution: "West Bengal Institute of Technology",
+    institution: "West Bengal University of Technology",
     degree: "B.Tech. in Electronics and Communication Engineering"
   }
 ];
