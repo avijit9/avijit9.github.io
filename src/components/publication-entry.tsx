@@ -10,12 +10,12 @@ export function PublicationEntry({
   return (
     <div className="flex flex-col sm:flex-row gap-6">
       {publication.imageUrl && (
-        <div className="w-full sm:w-1/4 min-w-[160px] relative">
+        <div className="w-full sm:w-1/2 min-w-[160px] relative">
           <Image
             src={publication.imageUrl}
             alt={publication.title}
-            width={160}
-            height={200}
+            width={320}
+            height={400}
             className="rounded-lg transition-all duration-300"
           />
         </div>
