@@ -9,14 +9,14 @@ export interface Experience {
 }
 
 export const experienceData: Experience[] = [
-  {
+  /*{
     date: "Dec 2021 -  Aug 2024",
     title: "Senior Research Scientist",
     company: "Cognizer Inc.",
     description:
       "Led the research team to develop legal AI products",
     companyUrl: "https://cognizer.ai/",
-  },
+  },*/
   {
     date: "Feb 2019 -  Apr 2019",
     title: "Visiting Research Fellow",
