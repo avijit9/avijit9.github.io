@@ -28,7 +28,7 @@ export const aboutMe: AboutMe = {
     <a href="https://faculty.iiit.ac.in/~jawahar/">C. V. Jawahar</a>, IIIT Hyderabad, and 
     <a https://lear.inrialpes.fr/people/alahari/">Karteek Alahari</a> at the <a href="https://thoth.inria.fr">Thoth group</a>, Inria. 
     My research focuses on developing video understanding models with the ability to generalize effectively across previously unseen domains. 
-    One of our projects is highlighted on Meta's YouTube channel, and you can check it out <a href="https://www.youtube.com/watch?v=TTVoW289UoU">here</a>.
+    One of our projects is highlighted on Meta's YouTube channel, and you can check it out <a href="https://www.youtube.com/watch?v=TTVoW289UoU" target="_blank">here</a>.
     <br><br>
     In 2019, I've spent three wonderful months as a visiting researcher at the Thoth group, Inria. 
     My Ph.D. is funded by the Google India Ph.D. Fellowship, 2017 (1 out of 4 recipients). Thank you Google!
