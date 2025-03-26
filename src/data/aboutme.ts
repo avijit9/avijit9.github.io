@@ -41,7 +41,7 @@ export const aboutMe: AboutMe = {
   linkedinUsername: "avijit-dasgupta-517717104",
   twitterUsername: "avijit9d",
   blogUrl: "https://",
-  cvUrl: "/files/avijit_cv.pdf",
+  cvUrl: "/files/avijit_cv_march25.pdf",
   institutionUrl: "https://www.iiit.ac.in",
   // altName: "",
   // secretDescription: "I like dogs.",
