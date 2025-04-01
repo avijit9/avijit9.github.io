@@ -15,13 +15,13 @@ export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
     year: "2025",
-    conference: "Pattern Recognition",
-    title: "Source-free video domain adaptation by learning from noisy labels",
-    authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari",
-    paperUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0031320324010793",
-    codeUrl: "https://avijit9.github.io/CleanAdapt/",
+    conference: "Under Submission",
+    title: "Evaluating Egocentric Video Domain Generalization in the Era of VLMs",
+    authors: "Avijit Dasgupta, Yale Song, C. V. Jawahar, Karteek Alahari",
+    paperUrl: "",
+    codeUrl: "",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "Source-free video adapation by a teacher-student framework",
+    tldr: "We introduce EgoDG-Bench, a benchmark for domain generalization (DG) in egocentric videos. Existing DG methods show only modest gains over ERM. We evaluate six vision-language models (VLMs) against twelve DG baselines under three domain shifts, recommending diverse evaluations and pretrained VLMs for consistency. Code and dataset will be released.",
     imageUrl:
       "/images/egodg.png",
     //award: "🏆 Best Paper Runner-up Award",
