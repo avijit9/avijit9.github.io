@@ -23,6 +23,21 @@ export const publicationData: Publication[] = [
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
     tldr: "Source-free video adapation by a teacher-student framework",
     imageUrl:
+      "/images/egodg.png",
+    //award: "🏆 Best Paper Runner-up Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+  },
+  {
+    year: "2025",
+    conference: "Pattern Recognition",
+    title: "Source-free video domain adaptation by learning from noisy labels",
+    authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari",
+    paperUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0031320324010793",
+    codeUrl: "https://avijit9.github.io/CleanAdapt/",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    tldr: "Source-free video adapation by a teacher-student framework",
+    imageUrl:
       "/images/pr.png",
     //award: "🏆 Best Paper Runner-up Award",
     // if you have an image in public/images, you can use it like this:
