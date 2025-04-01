@@ -22,7 +22,7 @@ export const experienceData: Experience[] = [
     title: "Visiting Research Fellow",
     company: "Thoth, Inria",
     description:
-      "Worked on action recognition in videos",
+      "Worked on reinforcement learning for DOOM game",
     advisor: "Karteek Alahari",
     companyUrl: "https://www.inria.fr/fr/centre-inria-universite-grenoble-alpes",
   },
