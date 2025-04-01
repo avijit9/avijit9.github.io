@@ -16,6 +16,22 @@ export const publicationData: Publication[] = [
   {
     year: "2025",
     conference: "Under Submission",
+    title: "EgoReading: A Multi-Modal Dataset for Personalized Reading with Wearable Glasses",
+    authors: "Avijit Dasgupta, Megha K.M., Ajoy Mondal, C. V. Jawahar",
+    paperUrl: "",
+    codeUrl: "",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    tldr: "",
+    imageUrl:
+      "/images/egoreading.png",
+    //award: "🏆 Best Paper Runner-up Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+  },
+
+  {
+    year: "2025",
+    conference: "Under Submission",
     title: "Evaluating Egocentric Video Domain Generalization in the Era of VLMs",
     authors: "Avijit Dasgupta, Yale Song, C. V. Jawahar, Karteek Alahari",
     paperUrl: "",
