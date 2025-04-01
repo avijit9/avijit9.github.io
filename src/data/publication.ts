@@ -21,7 +21,7 @@ export const publicationData: Publication[] = [
     paperUrl: "",
     codeUrl: "",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "",
+    tldr: "We introduce EgoReading, a multi-modal dataset of people reading books with eye gaze and audio information to support personalized reading assistance in egocentric vision.",
     imageUrl:
       "/images/egoreading.png",
     //award: "🏆 Best Paper Runner-up Award",
