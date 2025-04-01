@@ -21,7 +21,7 @@ export const publicationData: Publication[] = [
     paperUrl: "",
     codeUrl: "",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "We introduce EgoDG-Bench, a benchmark for domain generalization (DG) in egocentric videos. Existing DG methods show only modest gains over ERM. We evaluate six vision-language models (VLMs) against twelve DG baselines under three domain shifts, recommending diverse evaluations and pretrained VLMs for consistency. Code and dataset will be released.",
+    tldr: "We introduce EgoDG-Bench, a benchmark for egocentric video domain generalization, and evaluate DG methods and vision-language models across diverse domain shifts.",
     imageUrl:
       "/images/egodg.png",
     //award: "🏆 Best Paper Runner-up Award",
