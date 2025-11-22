@@ -1,0 +1,141 @@
+<h2>hello!</h2>
+<hr>
+
+<div class="main-text">
+    {{ .Content }}
+</div>
+<hr>
+
+<h3>recent & upcoming</h3>
+
+<div class="timeline">
+{{ $items := .Site.Data.recent.recent }}
+{{ range $index, $item := $items }}
+    <div class="timeline-item {{ if ge $index 3 }}timeline-item-hidden{{ end }}">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+            <div class="timeline-date">{{ $item.date }}</div>
+            <div class="timeline-text">{{ $item.text }}</div>
+        </div>
+    </div>
+{{ end }}
+</div>
+{{ if gt (len $items) 3 }}
+<div class="show-more-container">
+    <button class="show-more-btn" onclick="toggleTimeline()">show more</button>
+</div>
+{{ end }}
+
+<script>
+function toggleTimeline() {
+    const hiddenItems = document.querySelectorAll('.timeline-item-hidden');
+    const button = document.querySelector('.show-more-btn');
+    
+    hiddenItems.forEach(item => {
+        item.classList.toggle('timeline-item-visible');
+    });
+    
+    if (button.textContent === 'show more') {
+        button.textContent = 'show less';
+    } else {
+        button.textContent = 'show more';
+    }
+}
+</script>
+
+<hr>
+
+<div class="affiliations">
+    <img src="/adobe.webp" alt="Adobe" class="affiliation-logo">
+    <span class="affiliation-divider">|</span>
+    <img src="/inria.png" alt="Inria" class="affiliation-logo">
+    <span class="affiliation-divider">|</span>
+    <img src="/iiit.jpeg" alt="IIIT Hyderabad" class="affiliation-logo">
+    <span class="affiliation-divider">|</span>
+    <img src="/iit_kgp.png" alt="IIT KGP" class="affiliation-logo">
+    <span class="affiliation-divider">|</span>
+    <img src="/isi.svg" alt="ISI Kolkata" class="affiliation-logo">
+</div>
+
+<hr>
+
+<h3>experience</h3>
+
+<div class="experience">
+{{ range .Site.Data.experience.experience }}
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="experience-title">{{ .title }}</div>
+            <div class="experience-company">{{ .company }}</div>
+        </div>
+        <div class="experience-meta">
+            <span class="experience-location">{{ .location }}</span>
+            <span class="experience-divider">•</span>
+            <span class="experience-period">{{ .period }}</span>
+        </div>
+        <div class="experience-description">{{ .description }}</div>
+    </div>
+{{ end }}
+</div>
+
+<hr>
+
+<h3>publications</h3>
+
+<div class="publications">
+{{ range .Site.Data.publications.publications }}
+    <div class="publication-year">
+        <h4 class="year-header">{{ .year }}</h4>
+        {{ range .items }}
+        <div class="publication-item">
+            <div class="publication-authors">
+                {{ $profileName := $.Site.Data.profile.name }}
+                {{ $authors := .authors }}
+                {{ if in $authors $profileName }}
+                    {{ replace $authors $profileName (printf "<strong>%s</strong>" $profileName) | safeHTML }}
+                {{ else }}
+                    {{ $authors }}
+                {{ end }}
+            </div>
+            <div class="publication-title"><strong>{{ .title | safeHTML }}</strong></div>
+            <div class="publication-venue">{{ .venue }}</div>
+            {{ if .links }}
+            <div class="publication-links">
+                {{ if .links.paper }}<a href="{{ .links.paper }}">paper</a>{{ end }}
+                {{ if .links.code }}<a href="{{ .links.code }}">code</a>{{ end }}
+                {{ if .links.project }}<a href="{{ .links.project }}">project</a>{{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+{{ end }}
+</div>
+
+<div class="publication-note">
+* indicates equal contribution
+</div>
+
+<hr>
+
+<h3>awards & honors</h3>
+
+<div class="awards">
+{{ range .Site.Data.awards.awards }}
+    <div class="award-item">
+        <strong>{{ .title }}</strong>, {{ .organization }} ({{ .year }}){{ if .description }} - {{ .description }}{{ end }}
+    </div>
+{{ end }}
+</div>
+
+<hr>
+
+<h3>services</h3>
+
+<div class="services">
+{{ range .Site.Data.services.services }}
+    <div class="service-item">
+        <strong>{{ .role }}</strong>, {{ .venue }} ({{ .period }})
+    </div>
+{{ end }}
+</div>

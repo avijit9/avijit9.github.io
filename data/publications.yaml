@@ -1,0 +1,94 @@
+publications:
+  - year: "2026"
+    items:
+      - title: "Distilling <em>What</em> and <em>Why</em>: Enhancing Driver Intention Prediction with MLLMs"
+        authors: "Avijit Dasgupta*, Sai Nithin*, Shankar Gangisetty, C. V. Jawahar"
+        venue: "WACV 2026"
+        links:
+          paper: ""
+          code: ""
+          project: ""
+      - title: "UniTabBank: A Large Scale Multi-Lingual, Multi-Layout, Multi-Type, Multi-Format Dataset for Table Detection"
+        authors: "Ajoy Mondal, Saumya Mundra, Avijit Dasgupta, C. V. Jawahar"
+        venue: "WACV 2026"
+        links:
+          paper: ""
+          code: ""
+          project: ""
+  - year: "2025"
+    items:
+      - title: "Do We Need Large VLMs for Spotting Soccer Actions?"
+        authors: "Ritabrata Chakraborty, Rajatsubhra Chakraborty, Avijit Dasgupta, Sandeep Chaurasia"
+        venue: "IJCNLP-AACL (SRW) 2025"
+        links:
+          paper: ""
+          code: ""
+          project: ""
+      - title: "Source-free Video Domain Adaptation by Learning from Noisy Labels"
+        authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari"
+        venue: "Pattern Recognition 2025"
+        links:
+          paper: "https://cvit.iiit.ac.in/images/ConferencePapers/2025/Source-free-video.pdf"
+          code: "https://github.com/avijitdasgupta/CleanAdapt"
+          project: "https://avijit9.github.io/CleanAdapt/"
+    
+  - year: "2024"
+    items:
+      - title: "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives"
+        authors: "Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, ..., Avijit Dasgupta*, ..."
+        venue: "CVPR 2024"
+        links:
+          paper: "https://arxiv.org/abs/2311.18259"
+          code: "https://github.com/facebookresearch/Ego4d"
+          project: "https://ego-exo4d-data.org/"
+  - year: "2022"
+    items:
+      - title: "Overcoming Label Noise for Source-free Unsupervised Video Domain Adaptation"
+        authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari"
+        venue: "ICVGIP 2022"
+        links:
+          paper: "https://hal.science/hal-03929619/file/21.pdf"
+          code: "https://github.com/avijitdasgupta/CleanAdapt"
+          project: "https://avijit9.github.io/CleanAdapt/"
+
+  - year: "2020"
+    items:
+      - title: "Context Aware Group Activity Recognition"
+        authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari"
+        venue: "ICPR 2020"
+        links:
+          paper: "https://ieeexplore.ieee.org/document/9412306/"
+
+  - year: "2017"
+    items:
+      - title: "A Fully Convolutional Neural Network Based Structured Prediction Approach Towards Retinal Vessel Segmentation"
+        authors: "Avijit Dasgupta*, Sonam Singh*"
+        venue: "ISBI 2017"
+        links:
+          paper: "https://ieeexplore.ieee.org/document/7950512/"
+  
+  - year: "2016"
+    items:
+      - title: "Morphological Geodesic Active Contour Based Automatic Aorta Segmentation in Thoracic CT Images"
+        authors: "Avijit Dasgupta, Sudipta Mukhopadhyay, Shrikant A Mehre, Parthasarathi Bhattacharyya"
+        venue: "CVIP 2016"
+        links:
+          paper: "https://link.springer.com/chapter/10.1007/978-981-10-2107-7_17"
+      - title: "A new approach of oral cancer detection using bilateral texture features in digital infrared thermal images"
+        authors: "Manashi Chakraborty, Sudipta Mukhopadhyay, Avijit Dasgupta, Santanu Patsa, Nishat Anjum, Jay Gopal Ray"
+        venue: "EMBC 2016"
+        links:
+          paper: "https://ieeexplore.ieee.org/document/7590964"
+      - title: "A new paradigm of oral cancer detection using digital infrared thermal imaging"
+        authors: "Manashi Chakraborty, Sudipta Mukhopadhyay, Avijit Dasgupta, Swapna Banerjee, Santanu Patsa, Jay G Ray, K Chaudhuri"
+        venue: "SPIE Medical Imaging 2016"
+        links:
+          paper: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9785/97853I/A-new-paradigm-of-oral-cancer-detection-using-digital-infrared/10.1117/12.2216785.short"
+  
+  - year: "2013"
+    items:
+      - title: "Lateral inhibition based holistic approach to adaptive image enhancement"
+        authors: "Avijit Dasgupta, Ashish Bakshi, Kuntal Ghosh"
+        venue: "IACC 2013"
+        links:
+          paper: "https://ieeexplore.ieee.org/document/6514388"

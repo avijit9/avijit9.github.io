@@ -1,0 +1,5 @@
+services:
+  - role: "Reviewer"
+    venue: "CVPR, ECCV, ICCV, WACV, ICDAR, ICVGIP, TMI, JBHI, CIBM"
+    period: "2023 - Present"
+

@@ -1,0 +1,27 @@
+awards:
+
+  - title: "Best Paper Runner-up"
+    organization: "ICVGIP 2022"
+    year: "2022"
+
+
+  - title: "Travel Grant"
+    organization: "IFCPAR/CEFIPRA "
+    year: "2019"
+    description: "Visiting Thoth, Inria, Grenoble 🇫🇷"
+
+
+  - title: "Google India Ph.D. Fellowship"
+    organization: "Google"
+    year: "2017"
+    description: "Awarded to 4 students in Machine Perception category"
+  
+  
+  - title: "Travel Grant"
+    organization: "ICMR"
+    year: "2017"
+    description: "To attend and present at ISBI 2017, Australia 🇦🇺"
+
+  - title: "Junior Research Fellowship"
+    organization: "MHRD, Government of India"
+    year: "2014"

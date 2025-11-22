@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Avijit Dasgupta"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+siteWidth = "900px"

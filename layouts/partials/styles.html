@@ -1,0 +1,514 @@
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #333;
+        background: #fff;
+        margin: 0;
+        padding: 3rem;
+    }
+    
+    .container {
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .layout {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 3rem;
+    }
+    
+    .profile {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 10px; /* Square with slight rounding */
+        border: 3px solid #d0d8ff;
+    }
+    
+    .name {
+        margin-top: 1rem;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .fellowship {
+        color: #666;
+        font-size: 14px;
+        margin-top: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+        color: #666;
+        margin-bottom: 1rem;
+    }
+    
+    .links a, .nav a {
+        color: #0033cc;
+        text-decoration: none;
+    }
+    
+    .icons img, .icons svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        opacity: 0.8;
+        vertical-align: middle;
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .timeline-item-hidden {
+        display: none;
+    }
+    
+    .timeline-item-visible {
+        display: block !important;
+    }
+    
+    .show-more-container {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    .show-more-btn {
+        background: none;
+        border: none;
+        color: #0033cc;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0.5rem 0;
+        text-decoration: underline;
+    }
+    
+    .show-more-btn:hover {
+        opacity: 0.8;
+    }
+    
+    .show-more-hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 1rem 0 0 0;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 9px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #ddd;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    
+    .timeline-marker {
+        position: absolute;
+        left: -29px;
+        top: 0.25rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #333;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 2px #ddd;
+    }
+    
+    .timeline-content {
+        padding-left: 0.5rem;
+    }
+    
+    .timeline-date {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.25rem;
+        font-size: 14px;
+    }
+    
+    .timeline-text {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .main-text {
+        font-size: 15px;
+    }
+    
+    .main-text p {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+    
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 1.5rem 0;
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 1rem 0;
+        color: #666;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+    
+    .footer a {
+        color: #0033cc;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+    
+    .affiliations {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .affiliation-logo {
+        height: 30px;
+        width: auto;
+        max-width: 120px;
+        object-fit: contain;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+    
+    .affiliation-logo:hover {
+        opacity: 1;
+    }
+    
+    .affiliation-divider {
+        color: #ddd;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    .publications {
+        margin-top: 1rem;
+    }
+    
+    .publication-year {
+        margin-bottom: 2rem;
+    }
+    
+    .year-header {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    
+    .publication-item {
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        border-left: 2px solid #ddd;
+    }
+    
+    .publication-title {
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+    }
+    
+    .publication-title strong {
+        font-weight: 600;
+    }
+    
+    .publication-authors {
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+    }
+    
+    .publication-authors strong {
+        font-weight: 600;
+    }
+    
+    .publication-venue {
+        color: #0033cc;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .publication-links {
+        font-size: 14px;
+    }
+    
+    .publication-links a {
+        color: #0033cc;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+    
+    .publication-links a:hover {
+        text-decoration: underline;
+    }
+    
+    .publication-note {
+        font-size: 13px;
+        color: #666;
+        font-style: italic;
+        margin-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    
+    .experience {
+        margin-top: 1rem;
+    }
+    
+    .experience-item {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        border-left: 2px solid #ddd;
+    }
+    
+    .experience-header {
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-title {
+        font-weight: 600;
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 0.25rem;
+    }
+    
+    .experience-company {
+        color: #0033cc;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .experience-meta {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-divider {
+        margin: 0 0.5rem;
+    }
+    
+    .experience-description {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+    }
+    
+    .awards {
+        margin-top: 1rem;
+    }
+    
+    .award-item {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        border-left: 2px solid #ddd;
+        font-size: 14px;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .award-item strong {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .services {
+        margin-top: 1rem;
+    }
+    
+    .service-item {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        border-left: 2px solid #ddd;
+        font-size: 14px;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .service-item strong {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .dark-mode-toggle {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .dark-mode-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Dark mode styles */
+    body.dark-mode {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .name {
+        color: #fff;
+    }
+    
+    body.dark-mode .subtitle,
+    body.dark-mode .fellowship {
+        color: #b0b0b0;
+    }
+    
+    body.dark-mode .timeline-date {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .timeline-text {
+        color: #b0b0b0;
+    }
+    
+    body.dark-mode .timeline::before {
+        background: #444;
+    }
+    
+    body.dark-mode .timeline-marker {
+        background: #e0e0e0;
+        border-color: #1a1a1a;
+        box-shadow: 0 0 0 2px #444;
+    }
+    
+    body.dark-mode hr {
+        border-top-color: #444;
+    }
+    
+    body.dark-mode .show-more-btn {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .year-header {
+        color: #fff;
+    }
+    
+    body.dark-mode .publication-item {
+        border-left-color: #444;
+    }
+    
+    body.dark-mode .publication-title,
+    body.dark-mode .publication-authors {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .publication-venue {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .publication-links a {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .publication-note {
+        color: #888;
+    }
+    
+    body.dark-mode .experience-item {
+        border-left-color: #444;
+    }
+    
+    body.dark-mode .experience-title {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .experience-company {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .experience-meta,
+    body.dark-mode .experience-description {
+        color: #b0b0b0;
+    }
+    
+    body.dark-mode .award-item,
+    body.dark-mode .service-item {
+        border-left-color: #444;
+    }
+    
+    body.dark-mode .award-item {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .award-item strong {
+        color: #fff;
+    }
+    
+    body.dark-mode .service-item {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .service-item strong {
+        color: #fff;
+    }
+    
+    body.dark-mode .footer {
+        color: #888;
+    }
+    
+    body.dark-mode .footer a {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .affiliation-divider {
+        color: #444;
+    }
+    
+    body.dark-mode .dark-mode-toggle {
+        background: rgba(26, 26, 26, 0.9);
+        border-color: #444;
+    }
+    
+    body.dark-mode .main-text {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .main-text a {
+        color: #6ba3ff;
+    }
+    
+    body.dark-mode .links a {
+        color: #6ba3ff;
+    }
+    </style>
+    

@@ -1,0 +1,30 @@
+experience:
+  - title: "Research Ph.D. Intern"
+    company: "Adobe Research"
+    location: "Bangalore, India"
+    period: "Jun 2025 - Nov, 2025"
+    description: "Working on document stylization with MLLMs"
+  
+  - title: "Visiting Researcher"
+    company: "Thoth, Inria"
+    location: "Grenoble, France"
+    period: "Feb 2019 - May 2019"
+    description: "Worked on reinforcement learning for DOOM game"
+  
+  - title: "Research Intern"
+    company: "IIIT Hyderabad"
+    location: "Hyderabad, India"
+    period: "Oct 2016 - Dec 2016"
+    description: "Worked on deep neural network visualization"
+  
+  - title: "Junior Research Fellow"
+    company: "IIT Kharagpur"
+    location: "Kharagpur, India"
+    period: "July 2014 - Oct 2016"
+    description: "Worked on various projects related to medical imaging"
+
+  - title: "Research Intern"
+    company: "ISI Kolkata"
+    location: "Kolkata, India"
+    period: "July 2012 - July 2013"
+    description: "Developed biologically inspired image filters"
