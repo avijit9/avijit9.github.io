@@ -7,7 +7,7 @@ publications:
         links:
           paper: ""
           code: ""
-          project: ""
+          project: "https://avijit9.github.io/DriveXplain/"
       - title: "UniTabBank: A Large Scale Multi-Lingual, Multi-Layout, Multi-Type, Multi-Format Dataset for Table Detection"
         authors: "Ajoy Mondal, Saumya Mundra, Avijit Dasgupta, C. V. Jawahar"
         venue: "WACV 2026"
