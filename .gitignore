@@ -1,7 +1,9 @@
 # Hugo
-/public/
 /resources/_gen/
 .hugo_build.lock
+
+# Ignore public folder (built files go to main branch)
+/public/
 
 # OS
 .DS_Store

@@ -2,7 +2,7 @@ publications:
   - year: "2026"
     items:
       - title: "Distilling <em>What</em> and <em>Why</em>: Enhancing Driver Intention Prediction with MLLMs"
-        authors: "Avijit Dasgupta*, Sai Nithin*, Shankar Gangisetty, C. V. Jawahar"
+        authors: "Avijit Dasgupta*, Sainithin Artham*, Shankar Gangisetty, C. V. Jawahar"
         venue: "WACV 2026"
         links:
           paper: ""
@@ -17,6 +17,13 @@ publications:
           project: ""
   - year: "2025"
     items:
+      - title: "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives"
+        authors: "Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, ..., Avijit Dasgupta*, ..."
+        venue: "IJCV 2025"
+        links:
+          paper: "https://link.springer.com/article/10.1007/s11263-025-02557-6"
+          code: "https://github.com/facebookresearch/Ego4d"
+          project: "https://ego-exo4d-data.org/"
       - title: "Do We Need Large VLMs for Spotting Soccer Actions?"
         authors: "Ritabrata Chakraborty, Rajatsubhra Chakraborty, Avijit Dasgupta, Sandeep Chaurasia"
         venue: "IJCNLP-AACL (SRW) 2025"
