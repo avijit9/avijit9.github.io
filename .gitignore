@@ -5,6 +5,9 @@
 # Ignore public folder (built files go to main branch)
 /public/
 
+# GitHub Actions workflow (optional - users can add via web interface)
+/.github/workflows/
+
 # OS
 .DS_Store
 Thumbs.db

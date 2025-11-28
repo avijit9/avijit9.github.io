@@ -23,7 +23,12 @@ else
     git remote add origin https://github.com/avijit9/avijit9.github.io.git
 fi
 
-# Add source files (excluding public folder)
+# Remove workflow files from git tracking (to avoid PAT scope issues)
+# Users can add them manually via GitHub web interface if needed
+git rm -r --cached .github/workflows/ 2>/dev/null || true
+
+# Add source files (excluding public folder and workflow files)
+# Note: .github/workflows/ is excluded via .gitignore to avoid PAT scope issues
 git add .
 git add -f .gitignore
 
