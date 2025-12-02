@@ -15,6 +15,8 @@ publications:
           paper: ""
           code: ""
           project: ""
+
+          
   - year: "2025"
     items:
       - title: "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives"
@@ -24,9 +26,20 @@ publications:
           paper: "https://link.springer.com/article/10.1007/s11263-025-02557-6"
           code: "https://github.com/facebookresearch/Ego4d"
           project: "https://ego-exo4d-data.org/"
+
+      - title: "Are We There Yet? Exploring the Capabilities of MLLMs in Assistive AI Applications"
+        authors: "Shayon Dasgupta, Avijit Dasgupta, C. V. Jawahar"
+        venue: "ICVGIP 2025"
+        award: "Oral Presentation" 
+        links:
+          paper: ""
+          code: ""
+          project: ""
+          
       - title: "Do We Need Large VLMs for Spotting Soccer Actions?"
         authors: "Ritabrata Chakraborty, Rajatsubhra Chakraborty, Avijit Dasgupta, Sandeep Chaurasia"
         venue: "IJCNLP-AACL (SRW) 2025"
+        award: "Oral Presentation" 
         links:
           paper: ""
           code: ""
@@ -44,6 +57,7 @@ publications:
       - title: "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives"
         authors: "Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, ..., Avijit Dasgupta*, ..."
         venue: "CVPR 2024"
+        award: "Oral Presentation" 
         links:
           paper: "https://arxiv.org/abs/2311.18259"
           code: "https://github.com/facebookresearch/Ego4d"
@@ -53,6 +67,7 @@ publications:
       - title: "Overcoming Label Noise for Source-free Unsupervised Video Domain Adaptation"
         authors: "Avijit Dasgupta, C. V. Jawahar, Karteek Alahari"
         venue: "ICVGIP 2022"
+        award: "Best Paper Runner-up" 
         links:
           paper: "https://hal.science/hal-03929619/file/21.pdf"
           code: "https://github.com/avijitdasgupta/CleanAdapt"
@@ -78,6 +93,7 @@ publications:
     items:
       - title: "Morphological Geodesic Active Contour Based Automatic Aorta Segmentation in Thoracic CT Images"
         authors: "Avijit Dasgupta, Sudipta Mukhopadhyay, Shrikant A Mehre, Parthasarathi Bhattacharyya"
+        award: "Oral Presentation" 
         venue: "CVIP 2016"
         links:
           paper: "https://link.springer.com/chapter/10.1007/978-981-10-2107-7_17"

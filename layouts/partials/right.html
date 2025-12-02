@@ -99,6 +99,9 @@ function toggleTimeline() {
             </div>
             <div class="publication-title"><strong>{{ .title | safeHTML }}</strong></div>
             <div class="publication-venue">{{ .venue }}</div>
+            {{ if .award }}
+            <div class="publication-award">{{ .award }}</div>
+            {{ end }}
             {{ if .links }}
             <div class="publication-links">
                 {{ if .links.paper }}<a href="{{ .links.paper }}">paper</a>{{ end }}
