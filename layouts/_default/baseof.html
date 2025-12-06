@@ -7,6 +7,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     {{ partial "styles.html" . }}
+    {{ if .Site.Params.googleAnalytics }}
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ .Site.Params.googleAnalytics }}');
+    </script>
+    {{ end }}
 </head>
 <body>
 <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
