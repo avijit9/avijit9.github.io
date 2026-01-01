@@ -5,14 +5,14 @@ publications:
         authors: "Avijit Dasgupta*, Sainithin Artham*, Shankar Gangisetty, C. V. Jawahar"
         venue: "WACV 2026"
         links:
-          paper: ""
+          paper: "https://drive.google.com/file/d/1lOGJSsO0mIFoEHtQLokevW_1osFzhYjb/view?usp=sharing"
           code: ""
           project: "https://avijit9.github.io/DriveXplain/"
       - title: "UniTabBank: A Large Scale Multi-Lingual, Multi-Layout, Multi-Type, Multi-Format Dataset for Table Detection"
         authors: "Ajoy Mondal, Saumya Mundra, Avijit Dasgupta, C. V. Jawahar"
         venue: "WACV 2026"
         links:
-          paper: ""
+          paper: "https://cvit.iiit.ac.in/images/ConferencePapers/2026/Multilingual_Table_Detection_What_Matters_More_Layout_or_Language.pdf"
           code: ""
           project: ""
 
@@ -41,7 +41,7 @@ publications:
         venue: "IJCNLP-AACL (SRW) 2025"
         award: "Oral Presentation" 
         links:
-          paper: ""
+          paper: "https://arxiv.org/pdf/2506.17144"
           code: ""
           project: ""
       - title: "Source-free Video Domain Adaptation by Learning from Noisy Labels"
