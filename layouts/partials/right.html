@@ -16,7 +16,7 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
             <div class="timeline-date">{{ $item.date }}</div>
-            <div class="timeline-text">{{ $item.text }}</div>
+            <div class="timeline-text">{{ $item.text | markdownify }}</div>
         </div>
     </div>
 {{ end }}
