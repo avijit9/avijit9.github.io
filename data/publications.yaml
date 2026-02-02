@@ -1,6 +1,13 @@
 publications:
   - year: "2026"
     items:
+      - title: "DRIVESAFE: A Framework for Risk Detection and Safety Suggestions in Driving Scenarios"
+        authors: "Sainithin Artham, Avijit Dasgupta, Shankar Gangisetty, C. V. Jawahar"
+        venue: "ICRA 2026"
+        links:
+          paper: ""
+          code: ""
+          project: ""
       - title: "Distilling <em>What</em> and <em>Why</em>: Enhancing Driver Intention Prediction with MLLMs"
         authors: "Avijit Dasgupta*, Sainithin Artham*, Shankar Gangisetty, C. V. Jawahar"
         venue: "WACV 2026"
