@@ -2,7 +2,7 @@ publications:
   - year: "2026"
     items:
       - title: "DRIVESAFE: A Framework for Risk Detection and Safety Suggestions in Driving Scenarios"
-        authors: "Sainithin Artham, Avijit Dasgupta, Shankar Gangisetty, C. V. Jawahar"
+        authors: "Sainithin Artham, Shankar Gangisetty, Avijit Dasgupta, C. V. Jawahar"
         venue: "ICRA 2026"
         links:
           paper: ""
